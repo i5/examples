@@ -1,0 +1,12 @@
+
+# comment
+
+\c
+	comment
+\c
+
+\c comment \c
+
+proc main(\c comment \c) {
+	# comment
+}

@@ -1,0 +1,38 @@
+proc main() {
+	if $true {
+		$print $true
+	}
+	# true
+
+	if $true {
+		$print $true
+	} else {
+		$print $false
+	}
+	# false
+
+	let a = 2
+
+	if a < 1 {
+		$print "a < 1"
+	} elif a == 1 {
+		$print "a = " : 1
+	} elif a == 2 {
+		$print "a = " : 2
+	} elif a == 3 {
+		$print "a = " : 3
+	} else {
+		$print "a > 3"
+	}
+	# a = 2
+
+	if $true and $false {
+		$print $true
+	} else {
+		$print $false
+	}
+	# false
+
+	$print if $true => 1 else => 2
+	# 1
+}

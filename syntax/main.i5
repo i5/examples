@@ -1,0 +1,23 @@
+proc main() {
+	$print 1
+	$print 2
+	$print \
+		3 \
+		,
+		4
+
+	$print "Hello" :
+		"World"
+	$print "Hello" \
+		: "World"
+	
+	$print 5 \n $print 6
+
+	# 1
+	# 2
+	# 3 4
+	# Hello World
+	# Hello World
+	# 5
+	# 6
+}
