@@ -1,12 +1,13 @@
+#!/usr/bin/env i5
 
 # comment
 
 \c
-	comment
-\c
+    comment
+\e
 
-\c comment \c
+\c comment \e
 
-proc main(\c comment \c) {
-	# comment
+proc main(\c comment \e) {
+    # comment
 }

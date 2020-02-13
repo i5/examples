@@ -1,0 +1,29 @@
+proc main() {
+    for i in 1..10 {
+        $console_write i
+    }
+    # 1 2 3 4 5 6 7 8 9 10 
+
+    for i = 0 while i < 10 {
+        $console_write i
+        let i += 1
+    }
+    # 1 2 3 4 5 6 7 8 9 10 
+
+    let j = 1
+    while $true {
+        if j > 10 {
+            break the while
+        }
+        $console_write j
+        let j += 1
+    }
+    # 1 2 3 4 5 6 7 8 9 10 
+
+    let k = 1
+    while k <= 10 {
+        $console_write k
+        let k += 1
+    }
+    # 1 2 3 4 5 6 7 8 9 10 
+}

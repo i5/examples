@@ -1,0 +1,37 @@
+proc main() {
+    if $true {
+        break
+        $print "this will never happen"
+    }
+
+    $print 1
+
+    while $true {
+        if $true {
+            break the if
+            $print "this will never happen"
+        }
+
+        $print 2
+
+        if $true {
+            break the while
+            $print "this will never happen"
+        }
+
+        $print "this will never happen"
+    }
+
+    $print 3
+
+    if $true {
+        break the proc
+        $print "this will never happen"
+    }
+
+    $print "this will never happen"
+
+    # 1
+    # 2
+    # 3
+}

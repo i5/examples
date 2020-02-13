@@ -1,44 +1,44 @@
 proc main() {
-	let a = 1
-	let a += 5
+    let a = 1
+    let a += 5
 
-	$print "a = " : a
-	# a = 6
+    $print "a = " : a
+    # a = 6
 
-	let b = $true
-	if true {
-		let b2 = b
-		let b = $false
-		let c = "c"
-	}
+    let b = $true
+    if true {
+        let b2 = b
+        let b = $false
+        let c = "c"
+    }
 
-	$print "b = " : b
-	# b = false
+    $print "b = " : b
+    # b = false
 
-	$print "b2 = " : b2
-	# b2 = true
+    $print "b2 = " : b2
+    # b2 = true
 
-	$print "c = " : c
-	# error
+    $print "c = " : c
+    # error
 
-	let d = 1
-	let d = $true
-	# error
+    let d = 1
+    let d = $true
+    # error
 
-	let e = 10
-	e += 5
-	# error
+    let e = 10
+    e += 5
+    # error
 
-	let camelCase = 1
-	let camel_case = 2
-	$print camelCase, camel_case, camel_case == camelCase
-	# 2 2 true
+    let camelCase = 1
+    let camel_case = 2
+    $print camelCase, camel_case, camel_case == camelCase
+    # 2 2 true
 
-	let my_superVar = 4
-	let mySuperVar += 2
-	let my_super_var += 1
-	let mySuper_var += 1
-	$print my_superVar, mySuperVar,
-	       my_super_var, mySuper_var
-	# 8 8 8 8
+    let my_superVar = 4
+    let mySuperVar += 2
+    let my_super_var += 1
+    let mySuper_var += 1
+    $print my_superVar, mySuperVar,
+           my_super_var, mySuper_var
+    # 8 8 8 8
 }

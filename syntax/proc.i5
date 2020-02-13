@@ -1,67 +1,60 @@
 proc main() {
-	do_something
-	# 1
+    do_something
+    # 1
+    print_something 2
+    # 2
 
-	print_something 2
-	# 2
+    print_something(3)
+    # error
+    print_something
+    # error
 
-	print_something(3)
-	# error
+    print_something 4, 5
+    # 4
+    $console_write "6\n"
+    # 6
+    $console_write
+    # error
+    run_procedure do_something
+    # 1
 
-	print_something
-	# error
+    run_procedure proc() {
+        $print 7
+    }
+    # 7
+    run_procedure {
+        $print 8
+    }
+    # 8
+    run_procedure2 proc(arg1 arg2) {
+        $print arg1, arg2
+    }, 9, 10
+    # 9 10
 
-	print_something 4, 5
-	# 4
-
-	$console_write "6\n"
-	# 6
-
-	$console_write
-	# error
-
-	run_procedure do_something
-	# 1
-
-	run_procedure proc() {
-		$print 7
-	}
-	# 7
-
-	run_procedure {
-		$print 8
-	}
-	# 8
-
-	run_procedure2 proc(arg1 arg2) {
-		$print arg1, arg2
-	}, 9, 10
-	# 9 10
-
-	IF 11 == 11, {
-		$print 11
-	}
-	# 11
+    IF 11 == 11, {
+        $print 11
+    }
+    # 11
 }
 
 proc do_something() {
-	$print 1
+    $print 1
 }
 
 proc print_something(something) {
-	$print something
+    $print something
 }
 
 proc run_procedure(procedure) {
-	procedure
+    procedure
 }
 
 proc run_procedure2(procedure arg1 arg2) {
-	procedure arg1, arg2
+    procedure arg1, arg2
 }
 
 proc IF(condition procedure) {
-	if condition {
-		procedure
-	}
+    if condition {
+        procedure
+    }
 }
