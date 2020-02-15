@@ -1,21 +1,21 @@
 proc main() {
-    if $true {
+    if true {
         break
         $print "this will never happen"
     }
 
     $print 1
 
-    while $true {
-        if $true {
-            break the if
+    while true {
+        if true {
+            break if
             $print "this will never happen"
         }
 
         $print 2
 
-        if $true {
-            break the while
+        if true {
+            break while
             $print "this will never happen"
         }
 
@@ -24,8 +24,8 @@ proc main() {
 
     $print 3
 
-    if $true {
-        break the proc
+    if true {
+        break proc
         $print "this will never happen"
     }
 

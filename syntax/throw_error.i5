@@ -2,18 +2,17 @@
 
 proc main() {
     let result = divide(2, "string") ? {
-        $print err
+        $print "error: " : error.(msg)
         $exit(1)
     }
+
     $print result
 }
 
 func divide(a b) ! {
     if b == 0 {
-        throw "can not divide by zero!"
+        throw $error("can not divide by zero!")
     }
 
-    return a / b ? {
-        throw the error
-    }
+    return a / b
 }

@@ -11,9 +11,9 @@ proc main() {
     # 1 2 3 4 5 6 7 8 9 10 
 
     let j = 1
-    while $true {
+    while true {
         if j > 10 {
-            break the while
+            break while
         }
         $console_write j
         let j += 1

@@ -5,10 +5,10 @@ proc main() {
     $print "a = " : a
     # a = 6
 
-    let b = $true
+    let b = true
     if true {
         let b2 = b
-        let b = $false
+        let b = false
         let c = "c"
     }
 
@@ -22,7 +22,7 @@ proc main() {
     # error
 
     let d = 1
-    let d = $true
+    let d = true
     # error
 
     let e = 10

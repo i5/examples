@@ -19,14 +19,14 @@ proc main() {
     }
     # 10..15
 
-    when $true {
+    when true {
         1 == 2 {
             $print 1
         }
         1 + 2 == 3 {
             $print 2
         }
-        $false {
+        false {
             $print 3
         }
         1 == 1 {
@@ -38,10 +38,10 @@ proc main() {
     }
     # 2
 
-    let b = $true == $true
+    let b = true == true
     $print when b {
-        $true => 1
-        $false => 2
+        true => 1
+        false => 2
         else => 3
     }
     # 1
