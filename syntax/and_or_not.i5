@@ -1,17 +1,19 @@
+import {
+    "salifm/std" as std
+}
+
 proc main() {
-    $print true and true # true
-    $print true and false # false
-    $print false and true # false
-    $print false and false # false
+    std.print(true and true) # true
+    std.print(true and false) # false
+    std.print(false and true) # false
+    std.print(false and false) # false
 
-    $print true or true # true
-    $print true or false # true
-    $print false or true # true
-    $print false or false # false
+    std.print(true or true) # true
+    std.print(true or false) # true
+    std.print(false or true) # true
+    std.print(false or false) # false
 
-    $print not true # false
-
-    $print not false and not false # true
-
-    $print not (false or true) # false
+    std.print(not true) # false
+    std.print(not false and not false) # true
+    std.print(not (false or true)) # false
 }

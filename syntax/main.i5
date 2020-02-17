@@ -1,17 +1,22 @@
-proc main() {
-    $print 1
-    $print 2
-    $print \
-        3 \
-        ,
-        4
+import {
+    "salifm/std" as std
+}
 
-    $print "Hello" :
-        "World"
-    $print "Hello" \
-        : "World"
+proc main() {
+    std.print(1)
+    std.print(2)
+    std.print(
+        3
+        ,
+        4 \
+    )
+
+    std.print("Hello" :
+        "World")
+    std.print("Hello"
+        : "World")
     
-    $print 5 \n $print 6
+    std.print(5) \n std.print(6)
 
     # 1
     # 2

@@ -1,8 +1,12 @@
+import {
+    "salifm/std" as std
+}
+
 proc main() {
     let a = 1
     let a += 5
 
-    $print "a = " : a
+    std.print("a = " : a)
     # a = 6
 
     let b = true
@@ -12,13 +16,13 @@ proc main() {
         let c = "c"
     }
 
-    $print "b = " : b
+    std.print("b = " : b)
     # b = false
 
-    $print "b2 = " : b2
+    std.print("b2 = " : b2)
     # b2 = true
 
-    $print "c = " : c
+    std.print("c = " : c)
     # error
 
     let d = 1
@@ -31,14 +35,13 @@ proc main() {
 
     let camelCase = 1
     let camel_case = 2
-    $print camelCase, camel_case, camel_case == camelCase
+    std.print(camelCase, camel_case, camel_case == camelCase)
     # 2 2 true
 
     let my_superVar = 4
     let mySuperVar += 2
     let my_super_var += 1
     let mySuper_var += 1
-    $print my_superVar, mySuperVar,
-           my_super_var, mySuper_var
+    std.print(my_superVar, mySuperVar, my_super_var, mySuper_var)
     # 8 8 8 8
 }

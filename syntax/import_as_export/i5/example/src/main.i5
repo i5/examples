@@ -4,7 +4,7 @@ import {
 }
 
 proc main() {
-	let result = calculator::sum(1, 2)
-	console::write result
+	let result = calculator.sum(1, 2)
+	console.write(result)
 	# 3
 }

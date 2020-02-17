@@ -1,3 +1,7 @@
+import {
+    "salifm/std" as std
+}
+
 proc main() {
     let s = sum(1, 2)
     # 3
@@ -11,18 +15,18 @@ proc main() {
     sum(7, 8)
     # error
 
-    $print sum(sum(9, 10), sum(11, 12))
+    std.print(sum(sum(9, 10), sum(11, 12)))
     # 42
 
     let something = get_something()
     # error
 
-    $print fn(sum, 13, 14)
+    std.print(fn(sum, 13, 14))
     # 27
 
-    $print fn(func(a b) {
+    std.print(fn(func(a b) {
         return a : " " : b
-    }, "Hello", "World")
+    }, "Hello", "World"))
     # Hello World
 }
 

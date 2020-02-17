@@ -1,35 +1,39 @@
+import {
+    "salifm/std" as std
+}
+
 proc main() {
     if true {
         break
-        $print "this will never happen"
+        std.print("this will never happen")
     }
 
-    $print 1
+    std.print(1)
 
     while true {
         if true {
-            break if
-            $print "this will never happen"
+            break "if"
+            std.print("this will never happen")
         }
 
-        $print 2
+        std.print(2)
 
         if true {
-            break while
-            $print "this will never happen"
+            break "while"
+            std.print("this will never happen")
         }
 
-        $print "this will never happen"
+        std.print("this will never happen")
     }
 
-    $print 3
+    std.print(3)
 
     if true {
-        break proc
-        $print "this will never happen"
+        break "proc"
+        std.print("this will never happen")
     }
 
-    $print "this will never happen"
+    std.print("this will never happen")
 
     # 1
     # 2

@@ -3,7 +3,11 @@
 ## Hello World
 
 ```
+import {
+    "salifm/std" as std
+}
+
 proc main() {
-    $print "Hello World"
+    std.print("Hello World")
 }
 ```

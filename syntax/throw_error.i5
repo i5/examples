@@ -1,17 +1,19 @@
-#!/usr/bin/env i5
+import {
+    "salifm/std" as std
+}
 
 proc main() {
-    let result = divide(2, "string") ? {
-        $print "error: " : error.(msg)
-        $exit(1)
+    let result = divide(2, 0) ? {
+        std.print("error: " : error.msg)
+        std.os.exit(1)
     }
 
-    $print result
+    std.print(result)
 }
 
 func divide(a b) ! {
     if b == 0 {
-        throw $error("can not divide by zero!")
+        throw std.error("can not divide by zero!")
     }
 
     return a / b

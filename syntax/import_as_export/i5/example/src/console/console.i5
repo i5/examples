@@ -1,7 +1,7 @@
-export {
-	write
+import {
+	"salifm/std" as std
 }
 
 proc write(text) {
-	$print text
+	std.print(text)
 }
