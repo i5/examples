@@ -1,14 +1,14 @@
-import {
-    "salifm/std" as std
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
     let result = divide(2, 0) ? {
-        std.print("error: " : error.msg)
+        std.println("error: " : error.msg)
         std.os.exit(1)
     }
 
-    std.print(result)
+    std.println(result)
 }
 
 func divide(a b) ! {

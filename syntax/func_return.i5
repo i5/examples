@@ -1,5 +1,5 @@
-import {
-    "salifm/std" as std
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
@@ -15,16 +15,16 @@ proc main() {
     sum(7, 8)
     # error
 
-    std.print(sum(sum(9, 10), sum(11, 12)))
+    std.println(sum(sum(9, 10), sum(11, 12)))
     # 42
 
     let something = get_something()
     # error
 
-    std.print(fn(sum, 13, 14))
+    std.println(fn(sum, 13, 14))
     # 27
 
-    std.print(fn(func(a b) {
+    std.println(fn(func(a b) {
         return a : " " : b
     }, "Hello", "World"))
     # Hello World

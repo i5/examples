@@ -1,0 +1,7 @@
+const {
+    std = import "salifm/i5l"
+}
+
+pub proc write(text) {
+    std.println(text)
+}

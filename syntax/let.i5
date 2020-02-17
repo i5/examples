@@ -1,12 +1,12 @@
-import {
-    "salifm/std" as std
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
     let a = 1
     let a += 5
 
-    std.print("a = " : a)
+    std.println("a = " : a)
     # a = 6
 
     let b = true
@@ -16,13 +16,13 @@ proc main() {
         let c = "c"
     }
 
-    std.print("b = " : b)
+    std.println("b = " : b)
     # b = false
 
-    std.print("b2 = " : b2)
+    std.println("b2 = " : b2)
     # b2 = true
 
-    std.print("c = " : c)
+    std.println("c = " : c)
     # error
 
     let d = 1
@@ -35,13 +35,13 @@ proc main() {
 
     let camelCase = 1
     let camel_case = 2
-    std.print(camelCase, camel_case, camel_case == camelCase)
+    std.println(camelCase, camel_case, camel_case == camelCase)
     # 2 2 true
 
     let my_superVar = 4
     let mySuperVar += 2
     let my_super_var += 1
     let mySuper_var += 1
-    std.print(my_superVar, mySuperVar, my_super_var, mySuper_var)
+    std.println(my_superVar, mySuperVar, my_super_var, mySuper_var)
     # 8 8 8 8
 }

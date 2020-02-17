@@ -1,17 +1,19 @@
-import (
-    "salifm/std/console" as console
-)
+const {
+    std = import "salifm/i5l"
+}
 
 proc main() {
     for i in 1..10 {
-        console.write(i)
+        std.print(i : " ")
     }
+    std.println()
     # 1 2 3 4 5 6 7 8 9 10 
 
     for i = 0 while i < 10 {
-        console.write(i)
+        std.print(i : " ")
         let i += 1
     }
+    std.println()
     # 1 2 3 4 5 6 7 8 9 10 
 
     let j = 1
@@ -19,14 +21,15 @@ proc main() {
         if j > 10 {
             break "while"
         }
-        console.write(j)
+        std.print(j : " ")
         let j += 1
     }
+    std.println()
     # 1 2 3 4 5 6 7 8 9 10 
 
     let k = 1
     while k <= 10 {
-        console.write(k)
+        std.print(k : " ")
         let k += 1
     }
     # 1 2 3 4 5 6 7 8 9 10 

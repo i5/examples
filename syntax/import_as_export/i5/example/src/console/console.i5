@@ -1,7 +1,0 @@
-import {
-	"salifm/std" as std
-}
-
-proc write(text) {
-	std.print(text)
-}

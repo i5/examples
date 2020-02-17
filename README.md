@@ -2,12 +2,12 @@
 
 ## Hello World
 
-```
-import {
-    "salifm/std" as std
+```i5
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
-    std.print("Hello World")
+    std.println("Hello World")
 }
 ```

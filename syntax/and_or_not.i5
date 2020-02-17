@@ -1,19 +1,19 @@
-import {
-    "salifm/std" as std
+const {
+    std = "salifm/std"
 }
 
 proc main() {
-    std.print(true and true) # true
-    std.print(true and false) # false
-    std.print(false and true) # false
-    std.print(false and false) # false
+    std.println(true and true) # true
+    std.println(true and false) # false
+    std.println(false and true) # false
+    std.println(false and false) # false
 
-    std.print(true or true) # true
-    std.print(true or false) # true
-    std.print(false or true) # true
-    std.print(false or false) # false
+    std.println(true or true) # true
+    std.println(true or false) # true
+    std.println(false or true) # true
+    std.println(false or false) # false
 
-    std.print(not true) # false
-    std.print(not false and not false) # true
-    std.print(not (false or true)) # false
+    std.println(not true) # false
+    std.println(not false and not false) # true
+    std.println(not (false or true)) # false
 }

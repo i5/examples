@@ -1,22 +1,22 @@
-import {
-    "salifm/std" as std
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
-    std.print(1)
-    std.print(2)
-    std.print(
+    std.println(1)
+    std.println(2)
+    std.println(
         3
         ,
         4 \
     )
 
-    std.print("Hello" :
+    std.println("Hello" :
         "World")
-    std.print("Hello"
+    std.println("Hello"
         : "World")
     
-    std.print(5) \n std.print(6)
+    std.println(5) \n std.println(6)
 
     # 1
     # 2

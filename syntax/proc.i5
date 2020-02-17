@@ -1,5 +1,5 @@
-import {
-    "salifm/std" as std
+const {
+    std = import "salifm/i5l"
 }
 
 proc main() {
@@ -22,25 +22,25 @@ proc main() {
     # 1
 
     run_procedure(proc() {
-        std.print(7)
+        std.println(7)
     })
     # 7
     run_procedure({
-        std.print(8)
+        std.println(8)
     })
     # 8
     run_procedure2(proc(arg1 arg2) {
-        std.print(arg1, arg2)
+        std.println(arg1, arg2)
     }, 9, 10)
     # 9 10
 }
 
 proc do_something() {
-    std.print(1)
+    std.println(1)
 }
 
 proc print_something(something) {
-    std.print(something)
+    std.println(something)
 }
 
 proc run_procedure(procedure) {
