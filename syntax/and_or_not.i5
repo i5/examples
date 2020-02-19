@@ -1,6 +1,4 @@
-const {
-    std = "salifm/std"
-}
+const std = import("salifm/i5l")
 
 proc main() {
     std.println(true and true) # true

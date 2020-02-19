@@ -1,6 +1,4 @@
-const {
-    std = import "salifm/i5l"
-}
+const std = import("salifm/i5l")
 
 proc main() {
     let s = sum(1, 2)
@@ -24,19 +22,19 @@ proc main() {
     std.println(fn(sum, 13, 14))
     # 27
 
-    std.println(fn(func(a b) {
+    std.println(fn(func(a, b) {
         return a : " " : b
     }, "Hello", "World"))
     # Hello World
 }
 
-func sum(a b) {
+func sum(a, b) {
     return a + b
 }
 
 func get_something() {
 }
 
-func fn(function arg1 arg2) {
+func fn(function, arg1, arg2) {
     return function(arg1, arg2)
 }

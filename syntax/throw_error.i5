@@ -1,6 +1,4 @@
-const {
-    std = import "salifm/i5l"
-}
+const std = import("salifm/i5l")
 
 proc main() {
     let result = divide(2, 0) ? {

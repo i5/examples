@@ -1,7 +1,5 @@
-const {
-    console    = import "./console"
-    calculator = import "author/package_name"
-}
+const console    = import("./console")
+const calculator = import("author/package_name")
 
 proc main() {
     let result = calculator.sum(1, 2)

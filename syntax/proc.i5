@@ -1,6 +1,4 @@
-const {
-    std = import "salifm/i5l"
-}
+const std = import("salifm/i5l")
 
 proc main() {
     do_something()
@@ -29,7 +27,7 @@ proc main() {
         std.println(8)
     })
     # 8
-    run_procedure2(proc(arg1 arg2) {
+    run_procedure2(proc(arg1, arg2) {
         std.println(arg1, arg2)
     }, 9, 10)
     # 9 10
@@ -47,6 +45,6 @@ proc run_procedure(procedure) {
     procedure()
 }
 
-proc run_procedure2(procedure arg1 arg2) {
+proc run_procedure2(procedure, arg1, arg2) {
     procedure(arg1, arg2)
 }
