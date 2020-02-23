@@ -1,0 +1,4 @@
+--name i5.examples.import_as_pub
+--version 0.0
+--main ./src
+--modules-path ../i5_modules

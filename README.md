@@ -3,7 +3,7 @@
 ## Hello World
 
 ```i5
-const std = import("salifm/i5l")
+import salifm.i5l as std
 
 proc main() {
     std.println("Hello World")

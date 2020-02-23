@@ -1,4 +1,4 @@
-const std = import("salifm/i5l")
+import salifm.i5l as std
 
 proc main() {
     for i in 1..10 {

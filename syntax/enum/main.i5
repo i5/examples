@@ -1,5 +1,5 @@
-const std = import("salifm/i5l")
-enum colors(red, green, blue)
+import salifm.i5l
+const colors = enum[red, green, blue]
 
 proc main() {    
     print_color(colors.green)

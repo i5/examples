@@ -1,0 +1,4 @@
+--name i5.examples.for_in_while
+--version 0.0
+--main .
+--modules-path ../i5_modules

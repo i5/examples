@@ -1,0 +1,4 @@
+--name author.package_name
+--version 0.0
+--main .
+--modules-path ../i5_modules

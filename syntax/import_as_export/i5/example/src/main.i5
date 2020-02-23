@@ -1,8 +1,0 @@
-const console    = import("./console")
-const calculator = import("author/package_name")
-
-proc main() {
-    let result = calculator.sum(1, 2)
-    console.write(result)
-    # 3
-}

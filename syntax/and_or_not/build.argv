@@ -1,0 +1,4 @@
+--name i5.examples.and_or_not
+--version 0.0
+--main .
+--modules-path ../i5_modules
