@@ -1,8 +1,0 @@
-import i5.examples.import_as_pub.console as console
-import author.package_name as calculator
-
-proc main() {
-    let result = calculator.sum(1, 2)
-    console.write(result)
-    # 3
-}

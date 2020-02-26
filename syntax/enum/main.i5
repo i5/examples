@@ -1,7 +1,6 @@
-import salifm.i5l
 const colors = enum[red, green, blue]
 
-proc main() {    
+proc main() {
     print_color(colors.green)
 }
 

@@ -1,0 +1,5 @@
+module i5.examples.when
+
+import {
+    salifm.i5l.std
+}

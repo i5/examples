@@ -1,16 +1,13 @@
-import salifm.i5l as std
-import salifm.i5l.os as os
-
 proc main() {
     let result = divide(2, 0) ? {
-        std.println("error: " : error.msg)
+        std.println("error: " & error.msg)
         os.exit(1)
     }
 
     std.println(result)
 }
 
-func divide(a b) ! {
+func divide(a, b) ! {
     if b == 0 {
         throw std.error("can not divide by zero!")
     }

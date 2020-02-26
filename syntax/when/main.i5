@@ -1,5 +1,3 @@
-import salifm.i5l as std
-
 proc main() {
     let a = 10
     when a {

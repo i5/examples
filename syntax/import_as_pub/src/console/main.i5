@@ -1,5 +1,0 @@
-import salifm.i5l as std
-
-pub proc write(text) {
-    std.println(text)
-}

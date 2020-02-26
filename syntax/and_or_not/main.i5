@@ -1,5 +1,3 @@
-import salifm.i5l as std
-
 proc main() {
     std.println(true and true) # true
     std.println(true and false) # false

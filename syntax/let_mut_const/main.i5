@@ -1,30 +1,34 @@
-import salifm.i5l as std
+const global = 1
 
 proc main() {
-    let a = 1
-    let a += 5
 
-    std.println("a = " : a)
+    std.println(global)
+    # 1
+
+    let a = 1
+    mut a += 5
+
+    std.println("a = " & a)
     # a = 6
 
     let b = true
     if true {
         let b2 = b
-        let b = false
+        mut b = false
         let c = "c"
     }
 
-    std.println("b = " : b)
+    std.println("b = " & b)
     # b = false
 
-    std.println("b2 = " : b2)
+    std.println("b2 = " & b2)
     # b2 = true
 
-    std.println("c = " : c)
+    std.println("c = " & c)
     # error
 
     let d = 1
-    let d = true
+    mut d = true
     # error
 
     let e = 10
@@ -32,14 +36,14 @@ proc main() {
     # error
 
     let camelCase = 1
-    let camel_case = 2
+    mut camel_case = 2
     std.println(camelCase, camel_case, camel_case == camelCase)
     # 2 2 true
 
     let my_superVar = 4
-    let mySuperVar += 2
-    let my_super_var += 1
-    let mySuper_var += 1
+    mut mySuperVar += 2
+    mut my_super_var += 1
+    mut mySuper_var += 1
     std.println(my_superVar, mySuperVar, my_super_var, mySuper_var)
     # 8 8 8 8
 }

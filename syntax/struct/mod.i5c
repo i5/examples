@@ -1,0 +1,5 @@
+module i5.examples.struct
+
+import {
+    salifm.i5l.std
+}
