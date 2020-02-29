@@ -1,6 +1,0 @@
-module i5.examples.throw_error
-
-import {
-    salifm.i5l.std
-    salifm.i5l.os
-}

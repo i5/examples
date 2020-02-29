@@ -1,5 +1,0 @@
-module i5.examples.break
-
-import {
-    salifm.i5l.std
-}

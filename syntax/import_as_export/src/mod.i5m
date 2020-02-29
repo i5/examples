@@ -1,6 +1,6 @@
-module i5.examples.import_as_export
+module
+    i5.examples.import_as_export
 
-import {
+import
     i5.examples.import_as_export.console
     i5.examples.author.package_name as calculator
-}

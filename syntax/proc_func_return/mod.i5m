@@ -1,0 +1,5 @@
+module
+    i5.examples.proc_func_return
+
+import
+    salifm.i5l.std

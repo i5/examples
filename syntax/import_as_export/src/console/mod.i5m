@@ -1,0 +1,8 @@
+module
+    i5.examples.import_as_export.console
+
+import
+    salifm.i5l.std
+
+export
+    write

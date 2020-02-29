@@ -2,14 +2,14 @@
 
 ## Hello World
 
-### mod.i5c
+### mod.i5m
 
-```i5c
-module i5.example.hello_world
+```i5m
+module
+    i5.example.hello_world
 
-import {
+import
     salifm.i5l.std
-}
 ```
 
 ### main.i5
