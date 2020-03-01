@@ -1,0 +1,10 @@
+proc main() {
+    std.println(fib(13))
+}
+
+func fib(a) {
+    if a < 2 {
+        return a
+    }
+    return fib(a - 1) + fib(a - 2)
+}

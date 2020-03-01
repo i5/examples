@@ -16,6 +16,6 @@ import
 
 ```i5
 proc main() {
-    std.println("Hello World")
+    std.println("Hello World!")
 }
 ```

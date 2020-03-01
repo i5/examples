@@ -7,6 +7,6 @@ proc main() {
 proc print_people_info(people_info) {
     std.println("name: " & people_info.name)
     std.println("age: " & people_info.age)
-    # name& Lorem Ipsum
-    # age& 32
+    # name: Lorem Ipsum
+    # age: 32
 }
