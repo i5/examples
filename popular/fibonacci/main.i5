@@ -1,5 +1,5 @@
 proc main() {
-    std.println(fib(13))
+    std->println(fib(13))
 }
 
 func fib(a) {

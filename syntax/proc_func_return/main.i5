@@ -7,22 +7,22 @@ proc main() {
     print_something(4, 5)
     # 4
 
-    std.print("6\n")
+    std->print("6\n")
     # 6
 
     run_procedure(do_something)
     # 1
 
     run_procedure(proc() {
-        std.println(7)
+        std->println(7)
     })
     # 7
     run_procedure({
-        std.println(8)
+        std->println(8)
     })
     # 8
     run_procedure2(proc(arg1, arg2) {
-        std.println(arg1, arg2)
+        std->println(arg1, arg2)
     }, 9, 10)
     # 9 10
 
@@ -38,16 +38,16 @@ proc main() {
     sum(7, 8)
     # error
 
-    std.println(sum(sum(9, 10), sum(11, 12)))
+    std->println(sum(sum(9, 10), sum(11, 12)))
     # 42
 
     let something = get_something()
     # error
 
-    std.println(fn(sum, 13, 14))
+    std->println(fn(sum, 13, 14))
     # 27
 
-    std.println(fn(func(a, b) {
+    std->println(fn(func(a, b) {
         return a & " " & b
     }, "Hello", "World"))
     # Hello World

@@ -1,5 +1,0 @@
-module
-    i5.examples.hello_world
-
-import
-    salifm.i5l.std

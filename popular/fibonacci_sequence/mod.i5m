@@ -1,5 +1,0 @@
-module
-    i5.examples.fibonacci_sequence
-
-import
-    salifm.i5l.std

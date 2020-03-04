@@ -1,9 +1,9 @@
 proc print1() {
-    std.println(1)
+    std->println(1)
 }
 
 proc print_something(something) {
-    std.println(something)
+    std->println(something)
 }
 
 proc run_procedure(procedure) {

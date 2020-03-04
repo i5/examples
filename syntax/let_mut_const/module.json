@@ -1,0 +1,6 @@
+{
+    "module": "i5.examples.let_mut_const",
+    "import": {
+        "std": "salifm.i5l.std"
+    }
+}

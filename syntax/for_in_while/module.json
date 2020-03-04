@@ -1,0 +1,6 @@
+{
+    "module": "i5.examples.for_in_while",
+    "import": {
+        "std": "salifm.i5l.std"
+    }
+}

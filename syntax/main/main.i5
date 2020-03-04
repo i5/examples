@@ -1,18 +1,18 @@
 proc main() {
-    std.println(1)
-    std.println(2)
-    std.println(
+    std->println(1)
+    std->println(2)
+    std->println(
         3
         ,
         4 \
     )
 
-    std.println("Hello" &
+    std->println("Hello" &
         "World")
-    std.println("Hello"
+    std->println("Hello"
         & "World")
 
-    std.println(5) \n std.println(6)
+    std->println(5) \n std->println(6)
 
     # 1
     # 2

@@ -2,13 +2,13 @@ const global = 1
 
 proc main() {
 
-    std.println(global)
+    std->println(global)
     # 1
 
     let a = 1
     mut a += 5
 
-    std.println("a = " & a)
+    std->println("a = " & a)
     # a = 6
 
     let b = true
@@ -18,13 +18,13 @@ proc main() {
         let c = "c"
     }
 
-    std.println("b = " & b)
+    std->println("b = " & b)
     # b = false
 
-    std.println("b2 = " & b2)
+    std->println("b2 = " & b2)
     # b2 = true
 
-    std.println("c = " & c)
+    std->println("c = " & c)
     # error
 
     let d = 1
@@ -37,13 +37,13 @@ proc main() {
 
     let camelCase = 1
     mut camel_case = 2
-    std.println(camelCase, camel_case, camel_case == camelCase)
+    std->println(camelCase, camel_case, camel_case == camelCase)
     # 2 2 true
 
     let my_superVar = 4
     mut mySuperVar += 2
     mut my_super_var += 1
     mut mySuper_var += 1
-    std.println(my_superVar, mySuperVar, my_super_var, mySuper_var)
+    std->println(my_superVar, mySuperVar, my_super_var, mySuper_var)
     # 8 8 8 8
 }

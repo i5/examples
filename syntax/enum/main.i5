@@ -7,13 +7,13 @@ proc main() {
 proc print_color(color) {
     when color {
         colors.red {
-            std.println("red")
+            std->println("red")
         }
         colors.green {
-            std.println("green")
+            std->println("green")
         }
         colors.blue {
-            std.println("blue")
+            std->println("blue")
         }
     }
     # green

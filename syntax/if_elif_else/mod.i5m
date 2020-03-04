@@ -1,5 +1,0 @@
-module
-    i5.examples.if_elif_else
-
-import
-    salifm.i5l.std

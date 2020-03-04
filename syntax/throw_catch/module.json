@@ -1,0 +1,7 @@
+{
+    "module": "i5.examples.throw_catch",
+    "import": {
+        "std": "salifm.i5l.std",
+        "os": "salifm.i5l.os"
+    }
+}

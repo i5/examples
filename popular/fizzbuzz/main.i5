@@ -10,5 +10,5 @@ proc main() {
         mut output += "\n"
         mut i += 1
     }
-    std.println(output)
+    std->println(output)
 }

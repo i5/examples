@@ -2,44 +2,44 @@ proc main() {
     let a = 10
     when a {
         1 {
-            std.println("1")
+            std->println("1")
         }
         2, 3, 4 {
-            std.println("2, 3, 4")
+            std->println("2, 3, 4")
         }
         5..9 {
-            std.println("5..9")
+            std->println("5..9")
         }
         10..15 {
-            std.println("10..15")
+            std->println("10..15")
         }
         else {
-            std.println("else")
+            std->println("else")
         }
     }
     # 10..15
 
     when true {
         1 == 2 {
-            std.println(1)
+            std->println(1)
         }
         1 + 2 == 3 {
-            std.println(2)
+            std->println(2)
         }
         false {
-            std.println(3)
+            std->println(3)
         }
         1 == 1 {
-            std.println(4)
+            std->println(4)
         }
         else {
-            std.println(5)
+            std->println(5)
         }
     }
     # 2
 
     let b = true == true
-    std.println(when b {
+    std->println(when b {
         true => 1
         false => 2
         else => 3

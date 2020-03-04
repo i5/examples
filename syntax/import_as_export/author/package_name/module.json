@@ -1,0 +1,6 @@
+{
+    "module": "i5.examples.author.package_name",
+    "export": [
+        "sum"
+    ]
+}

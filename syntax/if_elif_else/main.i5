@@ -1,38 +1,38 @@
 proc main() {
     if true {
-        std.println(true)
+        std->println(true)
     }
     # true
 
     if true {
-        std.println(true)
+        std->println(true)
     } else {
-        std.println(false)
+        std->println(false)
     }
     # false
 
     let a = 2
 
     if a < 1 {
-        std.println("a < 1")
+        std->println("a < 1")
     } elif a == 1 {
-        std.println("a = " & 1)
+        std->println("a = " & 1)
     } elif a == 2 {
-        std.println("a = " & 2)
+        std->println("a = " & 2)
     } elif a == 3 {
-        std.println("a = " & 3)
+        std->println("a = " & 3)
     } else {
-        std.println("a > 3")
+        std->println("a > 3")
     }
     # a = 2
 
     if true and false {
-        std.println(true)
+        std->println(true)
     } else {
-        std.println(false)
+        std->println(false)
     }
     # false
 
-    std.println(if true => 1 else => 2)
+    std->println(if true => 1 else => 2)
     # 1
 }

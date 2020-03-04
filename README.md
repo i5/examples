@@ -2,20 +2,21 @@
 
 ## Hello World
 
-### mod.i5m
+### module.json
 
-```i5m
-module
-    i5.example.hello_world
-
-import
-    salifm.i5l.std
+```json
+{
+    "module": "i5.examples.hello_world",
+    "import": {
+        "std": "salifm.i5l.std"
+    }
+}
 ```
 
 ### main.i5
 
 ```i5
 proc main() {
-    std.println("Hello World!")
+    std->println("Hello World!")
 }
 ```

@@ -1,5 +1,0 @@
-module
-    i5.examples.let_mut_const
-
-import
-    salifm.i5l.std
