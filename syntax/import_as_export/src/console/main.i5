@@ -1,3 +1,0 @@
-proc write(text) {
-    std->println(text)
-}

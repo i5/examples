@@ -1,9 +1,0 @@
-{
-    "module": "i5.examples.example-module.console",
-    "import": {
-        "std": "salifm.i5l.std"
-    },
-    "export": [
-        "write"
-    ]
-}

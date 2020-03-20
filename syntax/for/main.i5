@@ -1,0 +1,19 @@
+import std
+
+proc main() {
+    for i in 1..10 {
+        std.print(i & " ")
+    }
+    std.println()
+
+    for i = 0 | i < 10 {
+        std.print(i & " ")
+        mut i += 1
+    }
+    std.println()
+
+    for i = 0 | i < 10 | i += 1 {
+        std.print(i & " ")
+    }
+    std.println()
+}

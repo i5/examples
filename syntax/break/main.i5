@@ -1,37 +1,35 @@
+import std
+
 proc main() {
     if true {
-        break
-        std->println("this will never happen")
+        break 1
+        std.println("this will never happen")
     }
 
-    std->println(1)
+    std.println(1)
 
-    while true {
+    for true {
         if true {
-            break "if"
-            std->println("this will never happen")
+            break 1
+            std.println("this will never happen")
         }
 
-        std->println(2)
+        std.println(2)
 
         if true {
-            break "while"
-            std->println("this will never happen")
+            break 2
+            std.println("this will never happen")
         }
 
-        std->println("this will never happen")
+        std.println("this will never happen")
     }
 
-    std->println(3)
+    std.println(3)
 
     if true {
-        break "proc"
-        std->println("this will never happen")
+        break 2
+        std.println("this will never happen")
     }
 
-    std->println("this will never happen")
-
-    # 1
-    # 2
-    # 3
+    std.println("this will never happen")
 }

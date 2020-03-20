@@ -1,7 +1,0 @@
-{
-    "module": "i5.examples.example-module",
-    "import": {
-        "console": "i5.examples.example-module.console",
-        "calculator": "i5.examples.author.package_name"
-    }
-}

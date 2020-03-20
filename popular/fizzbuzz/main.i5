@@ -1,14 +1,15 @@
+import std
+
 proc main() {
-    let output = ""
-    for i = 1 while i <= 100 {
-        mut output += when 0 {
-            i % 15 => "FizzBuzz"
-            i % 3  => "Fizz"
-            i % 5  => "Buzz"
-            else   => i
-        }
-        mut output += "\n"
-        mut i += 1
+    var output = ""
+    for i in 1..100 {
+        mut output &= (
+            match 0 {
+                i % 15 => "FizzBuzz"
+                i % 3  => "Fizz"
+                i % 5  => "Buzz"
+            } else => i
+        ) & "\n"
     }
-    std->println(output)
+    std.println(output)
 }

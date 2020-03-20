@@ -1,6 +1,0 @@
-{
-    "module": "i5.examples.and_or_not",
-    "import": {
-        "std": "salifm.i5l.std"
-    }
-}

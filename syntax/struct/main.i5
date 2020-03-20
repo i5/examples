@@ -1,13 +1,24 @@
-const people = struct[name, age]
-
-proc main() {
-    print_people_info(new people("Lorem Ipsum", 32))
+struct people {
+    name
+    age
 }
 
-proc print_people_info(people_info) {
-    std->println("name: " & people_info.name)
-    std->println("age: " & people_info.age)
-    # name: Lorem Ipsum
-    # age: 32
-    std->println()
+struct people2 [name, age]
+
+proc main() {
+    print_people(
+        people["Lorem Ipsum", 32]
+    )
+    print_people(
+        people{
+            "Ipsum Lorem"
+            14
+        }
+    )
+}
+
+proc print_people(p) {
+    std.println("name: " & p->name)
+    std.println("age: " & p->age)
+    std.println()
 }

@@ -1,20 +1,21 @@
-const colors = enum[red, green, blue]
+import std
+
+enum colors [red, green, blue]
 
 proc main() {
-    print_color(colors.green)
+    print_color(colors->green)
 }
 
 proc print_color(color) {
-    when color {
-        colors.red {
-            std->println("red")
+    match color {
+        colors->red {
+            std.println("red")
         }
-        colors.green {
-            std->println("green")
+        colors->green {
+            std.println("green")
         }
-        colors.blue {
-            std->println("blue")
+        colors->blue {
+            std.println("blue")
         }
     }
-    # green
 }

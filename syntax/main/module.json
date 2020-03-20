@@ -1,6 +1,0 @@
-{
-    "module": "i5.examples.main",
-    "import": {
-        "std": "salifm.i5l.std"
-    }
-}

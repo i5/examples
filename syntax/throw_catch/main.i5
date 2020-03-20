@@ -1,16 +1,17 @@
-proc main() {
-    let result = divide(2, 0) ? catch(err) {
-        std->println("error: " & err.msg)
-        os->exit(1)
-    }
+import std
+import process
 
-    std->println(result)
+proc main() {
+    con result = divide(2, 0) ? {
+        std.println("error: " & err.msg)
+        process.exit(1)
+    }
+    std.println(result)
 }
 
 func divide(a, b) ! {
     if b == 0 {
-        throw std->error("can not divide by zero!")
+        throw std.error("can not divide by zero!")
     }
-
     return a / b
 }

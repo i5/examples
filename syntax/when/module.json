@@ -1,6 +1,0 @@
-{
-    "module": "i5.examples.when",
-    "import": {
-        "std": "salifm.i5l.std"
-    }
-}

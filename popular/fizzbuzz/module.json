@@ -1,6 +1,0 @@
-{
-    "module": "i5.examples.fizzbuzz",
-    "import": {
-        "std": "salifm.i5l.std"
-    }
-}

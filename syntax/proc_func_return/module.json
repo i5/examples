@@ -1,6 +1,0 @@
-{
-    "module": "i5.examples.proc_func_return",
-    "import": {
-        "std": "salifm.i5l.std"
-    }
-}
