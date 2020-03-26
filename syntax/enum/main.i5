@@ -1,20 +1,26 @@
 import std
 
-enum colors [red, green, blue]
+enum {
+    red
+    green
+    blue
+}
+
+# enum { red, green, blue }
 
 proc main() {
-    print_color(colors->green)
+    print_color(green)
 }
 
 proc print_color(color) {
     match color {
-        colors->red {
+        red {
             std.println("red")
         }
-        colors->green {
+        green {
             std.println("green")
         }
-        colors->blue {
+        blue {
             std.println("blue")
         }
     }

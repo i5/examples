@@ -1,0 +1,24 @@
+import std
+
+proc main() {
+    if true {
+        std.println(1)
+    }
+
+    if true {
+        std.println(1)
+    } else {
+        std.println(0)
+    }
+
+    if true and false {
+        std.println(1)
+    } else {
+        std.println(0)
+    }
+
+    std.println(
+        if true => 1
+        else => 0
+    )
+}

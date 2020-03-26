@@ -1,13 +1,16 @@
+import std
+
 struct people {
     name
     age
 }
 
-struct people2 [name, age]
+# struct people { name, age }
+
 
 proc main() {
     print_people(
-        people["Lorem Ipsum", 32]
+        people{"Lorem Ipsum", 32}
     )
     print_people(
         people{

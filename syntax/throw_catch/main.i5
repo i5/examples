@@ -1,9 +1,10 @@
 import std
-import process
+import std.error
+import std.process
 
 proc main() {
     con result = divide(2, 0) ? {
-        std.println("error: " & err.msg)
+        std.println("error: " & this.msg)
         process.exit(1)
     }
     std.println(result)
@@ -11,7 +12,7 @@ proc main() {
 
 func divide(a, b) ! {
     if b == 0 {
-        throw std.error("can not divide by zero!")
+        throw error.new("can not divide by zero!")
     }
     return a / b
 }
