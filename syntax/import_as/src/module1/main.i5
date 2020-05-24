@@ -1,7 +1,0 @@
-import this.module2 as m2
-
-con one = 1
-con two = 2
-con three = m2.three
-con four = m2.four
-

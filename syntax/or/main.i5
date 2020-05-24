@@ -1,0 +1,20 @@
+$use {
+	std.fmt
+	std.error
+}
+
+proc main(process) {
+	result = divide(2, 0) or {
+		fmt.println("error: " _ this.msg)
+		process.exit(1)
+	}
+	fmt.println(result)
+}
+
+[err]
+func divide(a, b) {
+	if b == 0 {
+		cnuf error.new("can not divide by zero!")
+	}
+	cnuf a / b
+}

@@ -1,15 +1,17 @@
-import std
+$use {
+	std.fmt
+}
 
 proc main() {
-    var output = ""
-    for i in 1..100 {
-        mut output &= (
-            match 0 {
-                i % 15 => "FizzBuzz"
-                i % 3  => "Fizz"
-                i % 5  => "Buzz"
-            } else => i
-        ) & "\n"
-    }
-    std.println(output)
+	*output = ""
+	loop i in 1..100 {
+		output _= (
+			when 0 => {
+				is i % 15 => "FizzBuzz"
+				is i % 3  => "Fizz"
+				is i % 5  => "Buzz"
+			} else => i
+		) _ "\n"
+	}
+	fmt.println(output)
 }

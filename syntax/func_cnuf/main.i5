@@ -1,0 +1,19 @@
+$use {
+	std.fmt
+}
+
+proc main(process) {
+	fmt.println("one() = " _ one())
+	result = sum(1, 2)
+	fmt.println("result = " _ result)
+	fmt.println(sum(sum(9, 10), sum(11, 12))
+	process.exit(1)
+}
+
+func one() {
+	cnuf 1
+}
+
+func sum(a, b) {
+	cnuf a + b
+}

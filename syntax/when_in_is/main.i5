@@ -1,0 +1,48 @@
+$use {
+	std.fmt
+}
+
+proc main() {
+	a = 10
+	when a {
+		is 1 {
+			fmt.println("1")
+		}
+		is 2, 3, 4 {
+			fmt.println("2, 3, 4")
+		}
+		in 5..9 {
+			fmt.println("5..9")
+		}
+		in 10..15 {
+			fmt.println("10..15")
+		}
+	} else {
+		fmt.println("else")
+	}
+
+	when $true {
+		is 1 == 2 {
+			fmt.println(1)
+		}
+		is 1 + 2 == 3 {
+			fmt.println(2)
+		}
+		is $false {
+			fmt.println(3)
+		}
+		is 1 == 1 {
+			fmt.println(4)
+		}
+	} else {
+		std.println(5)
+	}
+
+	b = $true == $true
+	fmt.println(
+		when b => {
+			$true => 1
+			$false => 2
+		} else => 3
+	)
+}

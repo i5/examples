@@ -1,8 +1,0 @@
-func one() {
-    return 1
-}
-
-func sum(a, b) {
-    return a + b
-}
-

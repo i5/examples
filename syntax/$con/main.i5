@@ -1,0 +1,22 @@
+$use {
+	std.fmt
+}
+
+$con {
+	global-const = 1
+}
+
+proc main() {
+	fmt.println("global-const = " _ global-const)
+
+	const = 2
+	fmt.println("const = " _ const)
+
+	*a = 1
+	a += 5
+	fmt.println("a = " _ a)
+
+	*my-var = 4
+	myVar += 2
+	fmt.println("my-var = " _ my_var)
+}

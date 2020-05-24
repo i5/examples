@@ -1,0 +1,9 @@
+
+proc main() {
+	print1()
+	print-something(2)
+	print-something(4, 5)
+	run-procedure(print1)
+	run-procedure-with-args(print-something, 4, 5)
+}
+

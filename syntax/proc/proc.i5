@@ -1,0 +1,19 @@
+$use {
+	std.fmt
+}
+
+proc print1() {
+	fmt.println(1)
+}
+
+proc print-something(something) {
+	fmt.println(something)
+}
+
+proc run-procedure(procedure) {
+	procedure()
+}
+
+proc run-procedure-with-args(procedure, arg1, arg2) {
+	procedure(arg1, arg2)
+}

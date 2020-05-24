@@ -1,0 +1,21 @@
+$use {
+	std.fmt
+}
+
+proc main() {
+	name = "dog"
+	age = 1
+	dog = Dog(name, age)
+	dog.print()
+}
+
+[struct]
+proc Dog(*dog, name, age) {
+	dog.name = name
+	dog.age = age
+}
+
+[Dog]
+proc print() {
+	fmt.println("name='" _ dog.name _ "', age='" _ dog.age _ "'")
+}

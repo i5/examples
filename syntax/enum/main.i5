@@ -1,27 +1,27 @@
-import std
+$use {
+	std.fmt
+}
 
 enum {
-    red
-    green
-    blue
+	Red
+	Green
+	Blue
 }
-
-# enum { red, green, blue }
 
 proc main() {
-    print_color(green)
+	print-color(Green)
 }
 
-proc print_color(color) {
-    match color {
-        red {
-            std.println("red")
-        }
-        green {
-            std.println("green")
-        }
-        blue {
-            std.println("blue")
-        }
-    }
+proc print-color(color) {
+	when color {
+		is Red {
+			fmt.println("red")
+		}
+		is Green {
+			fmt.println("green")
+		}
+		is Blue {
+			fmt.println("blue")
+		}
+	}
 }

@@ -1,12 +1,12 @@
-import std
+$use {
+	std.fmt
+}
 
 proc main() {
-    std.println(fib(13))
+	fmt.println(fib(13))
 }
 
-func fib(a) {
-    return (
-        if a < 2 => a
-        else => fib(a - 1) + fib(a - 2)
-    )
-}
+func fib(a) => (
+	if a < 2 => a
+	else => fib(a - 1) + fib(a - 2)
+)

@@ -1,24 +1,19 @@
-import std
+$use {
+	std.fmt
+}
 
 proc main() {
-    if true {
-        std.println(1)
-    }
+	a = 1
+	if a == 1 {
+		std.println("a = " _ 1)
+	} else {
+		std.println("a = " _ 0)
+	}
 
-    if true {
-        std.println(1)
-    } else {
-        std.println(0)
-    }
-
-    if true and false {
-        std.println(1)
-    } else {
-        std.println(0)
-    }
-
-    std.println(
-        if true => 1
-        else => 0
-    )
+	std.println(
+		"a = " _ (
+			if (a == 1) => 1
+			else => 0
+		)
+	)
 }

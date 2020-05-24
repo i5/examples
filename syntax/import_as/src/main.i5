@@ -1,8 +1,0 @@
-import calculator
-import this.src.module1 as m
-import this.src.console
-
-proc main() {
-    con result = calculator.sum(m.one, m.four)
-    console.write(result)
-}

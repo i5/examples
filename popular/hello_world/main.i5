@@ -1,5 +1,0 @@
-import std
-
-proc main() {
-    std.println("Hello world!")
-}

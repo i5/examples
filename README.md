@@ -3,9 +3,11 @@
 ## Hello World
 
 ```i5
-import std
+$use (
+	std.fmt
+)
 
 proc main() {
-    std.println("Hello World!")
+	fmt.println("Hello World!")
 }
 ```

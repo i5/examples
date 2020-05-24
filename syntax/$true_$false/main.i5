@@ -1,0 +1,23 @@
+$use {
+	std.fmt
+}
+
+$con {
+	True = $true
+	False = $false
+}
+
+proc main() {
+	fmt.println(True && False) # false
+	fmt.println(False || True) # false
+	fmt.println(False && False) # false
+
+	fmt.println(True || True) # true
+	fmt.println(True || False) # true
+	fmt.println(False || True) # true
+	fmt.println(False || False) # false
+
+	fmt.println(!True) # false
+	fmt.println(!False && !False) # true
+	fmt.println(!(False || True)) # false
+}
