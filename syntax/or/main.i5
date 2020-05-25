@@ -1,20 +1,26 @@
 $use {
-	std.fmt
-	std.error
+	stdl.fmt
+	stdl.error
 }
 
 proc main(process) {
-	result = divide(2, 0) or {
+	result1 = divide(4, 2) or {
 		fmt.println("error: " _ this.msg)
 		process.exit(1)
 	}
-	fmt.println(result)
+	fmt.println(result1)
+
+	result2 = divide(2, 0) or {
+		fmt.println("error: " _ this.msg)
+		process.exit(1)
+	}
+	fmt.println(result2)
 }
 
-[err]
 func divide(a, b) {
 	if b == 0 {
 		cnuf error.new("can not divide by zero!")
 	}
 	cnuf a / b
 }
+

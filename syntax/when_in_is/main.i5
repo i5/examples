@@ -1,5 +1,5 @@
 $use {
-	std.fmt
+	stdl.fmt
 }
 
 proc main() {
@@ -35,7 +35,7 @@ proc main() {
 			fmt.println(4)
 		}
 	} else {
-		std.println(5)
+		fmt.println(5)
 	}
 
 	b = $true == $true

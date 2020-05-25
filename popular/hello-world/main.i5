@@ -1,7 +1,7 @@
 $use {
-	std.fmt
+	stdl.fmt
 }
 
 proc main() {
-	std.println("Hello world!")
+	fmt.println("Hello world!")
 }

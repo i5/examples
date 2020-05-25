@@ -4,10 +4,10 @@
 
 ```i5
 $use (
-	std.fmt
+     stdl.fmt
 )
 
 proc main() {
-	fmt.println("Hello World!")
+     fmt.println("Hello World!")
 }
 ```

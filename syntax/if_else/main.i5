@@ -1,16 +1,16 @@
 $use {
-	std.fmt
+	stdl.fmt
 }
 
 proc main() {
 	a = 1
 	if a == 1 {
-		std.println("a = " _ 1)
+		fmt.println("a = " _ 1)
 	} else {
-		std.println("a = " _ 0)
+		fmt.println("a = " _ 0)
 	}
 
-	std.println(
+	fmt.println(
 		"a = " _ (
 			if (a == 1) => 1
 			else => 0
